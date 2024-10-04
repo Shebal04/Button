@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColourChange</title>
+</head>
+<body id="body">
+    <button id="b1" onclick="red()">First</button>
+    <button id="b2" onclick="blue()">Second</button>
+    <button id="b3" onclick="green()">Third</button>
+    <button id="b4" onclick="reset()">Reset</button>
+</body>
+    <script>
+        function red() {
+            let a=document.getElementById("b1");
+            let b=document.getElementById("body");
+            a.style.backgroundColor="red";
+            b.style.backgroundColor="red";
+        }
+        function blue() {
+            let a=document.getElementById("b2");
+            let b=document.getElementById("body");
+            a.style.backgroundColor="blue";
+            b.style.backgroundColor="blue";
+        }
+        function green() {
+            let a=document.getElementById("b3");
+            let b=document.getElementById("body");
+            a.style.backgroundColor="green";
+            b.style.backgroundColor="green";
+        }
+        function reset() {
+            let a=document.getElementById("b4");
+            let b=document.getElementById("body");
+            a.style.backgroundColor="white";
+            b.style.backgroundColor="white";
+        }
+    </script>
+</html>
